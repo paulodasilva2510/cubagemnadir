@@ -1,0 +1,59 @@
+@charset "UTF - 8";
+/* Estilos básicos para o formulário e seus elementos */
+body {
+  font: normal 20pt Arial;
+  background-color: rgb(2, 2, 95);
+  color: white;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px; /* Define uma largura máxima para o formulário */
+  margin: 0 auto; /* Centraliza o formulário na tela */
+}
+
+input,
+button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+/* Estilos responsivos usando media queries */
+@media (min-width: 576px) {
+  form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  input {
+    flex: 1 1 100%; /* Ocupa toda a largura em telas pequenas */
+    margin-bottom: 10px; /* Espaçamento vertical para telas maiores */
+  }
+
+  input:last-child,
+  button {
+    flex: 1 1 auto; /* Ajusta a largura com base no conteúdo */
+  }
+}
+
+@media (min-width: 768px) {
+  input {
+    flex: 1 1 48%; /* Ocupa metade da largura em telas médias */
+  }
+}
+
+@media (min-width: 992px) {
+  input {
+    flex: 1 1 30%; /* Ocupa um terço da largura em telas grandes */
+  }
+}
