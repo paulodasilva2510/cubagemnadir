@@ -18,7 +18,7 @@ form {
 
 input,
 button {
-  padding: 20px;
+  padding: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -27,7 +27,6 @@ button {
   background-color: #11037f;
   color: white;
   cursor: pointer;
-  font: normal 10pt Arial;
 }
 
 /* Estilos responsivos usando media queries */
