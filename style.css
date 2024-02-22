@@ -1,30 +1,33 @@
 @charset "UTF - 8";
 /* Estilos básicos para o formulário e seus elementos */
 body {
+  background-color: #03497f;
   font: normal 20pt Arial;
-  background-color: rgb(2, 2, 95);
   color: white;
   text-align: center;
+  justify-content: center;
 }
+
 form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 600px; /* Define uma largura máxima para o formulário */
+  max-width: 500px; /* Define uma largura máxima para o formulário */
   margin: 0 auto; /* Centraliza o formulário na tela */
 }
 
 input,
 button {
-  padding: 10px;
+  padding: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
 button {
-  background-color: #007bff;
+  background-color: #11037f;
   color: white;
   cursor: pointer;
+  font: normal 10pt Arial;
 }
 
 /* Estilos responsivos usando media queries */
