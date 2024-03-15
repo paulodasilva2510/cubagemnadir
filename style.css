@@ -2,81 +2,25 @@
 
 /* Estilos básicos para o formulário e seus elementos */
 body {
-  background-color: #03497f;
+  background: rgb(70, 142, 236);
   font: normal 15pt Arial;
+}
+
+header {
   color: white;
   text-align: center;
-  justify-content: center;
-  padding: px;
 }
 
-#img {
-  width: 50px;
-  height: 60px;
-  background-image: url(imgnadir.jpeg);
-  border-radius: 5px;
+section {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
 }
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 500px; /* Define uma largura máxima para o formulário */
-  margin: 0 auto; /* Centraliza o formulário na tela */
-}
-
-input,
-button {
-  padding: 10px;
-  border: 2px solid rgba(204, 204, 204, 0.639);
-  border-radius: 5px;
-}
-
-button {
-  padding: 10px;
-  background-color: #11037f;
-  color: white;
-  cursor: pointer;
-}
-
 footer {
   color: white;
-  font-size: 0.8em;
   text-align: center;
-  padding: 5px;
-
-  /*padding: 0px;
-  border: 2px solid rgba(204, 204, 204, 0.937);
-  border-radius: 5px;*/
-}
-
-/* Estilos responsivos usando media queries */
-@media (min-width: 576px) {
-  form {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  input {
-    flex: 1 1 100%; /* Ocupa toda a largura em telas pequenas */
-    margin-bottom: 10px; /* Espaçamento vertical para telas maiores */
-  }
-
-  input:last-child,
-  button {
-    flex: 1 1 auto; /* Ajusta a largura com base no conteúdo */
-  }
-}
-
-@media (min-width: 768px) {
-  input {
-    flex: 1 1 48%; /* Ocupa metade da largura em telas médias */
-  }
-}
-
-@media (min-width: 992px) {
-  input {
-    flex: 1 1 30%; /* Ocupa um terço da largura em telas grandes */
-  }
+  font-style: italic;
 }

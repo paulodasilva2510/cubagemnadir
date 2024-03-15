@@ -27,7 +27,7 @@ document
     var alturaCarga = volumeCarga / comprimentoCaminhao / larguraCaminhao;
 
     // Adiciona uma margem de 10%
-    var alturaCargaComMargem = alturaCarga * 1.1;
+    var alturaCargaComMargem = alturaCarga * 1.05;
 
     // Exibe o resultado
     document.getElementById('resultado').textContent =
