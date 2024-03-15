@@ -4,6 +4,7 @@
 body {
   background: rgb(70, 142, 236);
   font: normal 15pt Arial;
+  font-size: 1rem;
 }
 
 header {
@@ -14,8 +15,10 @@ header {
 section {
   background: white;
   border-radius: 10px;
-  padding: 15px;
-  width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+  width: 100;
+  max-width: 60%;
   margin: auto;
   line-height: 2;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
@@ -24,4 +27,9 @@ footer {
   color: white;
   text-align: center;
   font-style: italic;
+}
+@media screen and (max-width: 768px) {
+  section {
+    width: 100%; /* Ajuste conforme necessário */
+  }
 }
