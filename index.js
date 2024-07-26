@@ -4,6 +4,7 @@ document
     evento.preventDefault(); // Previne o comportamento padrão de envio do formulário
 
     // Obtém os valores do formulário
+    var porcento = parseFloat(document.getElementById('porcento').value);
     var comprimentoCaminhao = parseFloat(
       document.getElementById('comprimentoCaminhao').value
     );
@@ -14,6 +15,7 @@ document
 
     // Verifica se os valores são números
     if (
+      isNaN(porcento) ||
       isNaN(comprimentoCaminhao) ||
       isNaN(larguraCaminhao) ||
       isNaN(volumeCarga)
@@ -23,13 +25,12 @@ document
       return;
     }
 
-    // Calcula a altura da carga
-    var alturaCarga = volumeCarga / comprimentoCaminhao / larguraCaminhao;
-
-    // Adiciona uma margem de 10%
-    var alturaCargaComMargem = alturaCarga * 1.05;
+    // Calcula a altura da carga com base na porcentagem
+    var alturaCarga =
+      (volumeCarga / (comprimentoCaminhao * larguraCaminhao)) *
+      (1 + porcento / 100);
 
     // Exibe o resultado
     document.getElementById('resultado').textContent =
-      'Altura da Carga: ' + alturaCargaComMargem.toFixed(2) + ' m';
+      'Altura da Carga: ' + alturaCarga.toFixed(2) + ' metros';
   });

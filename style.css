@@ -23,6 +23,37 @@ section {
   line-height: 2;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
 }
+button {
+  padding: 17px 40px;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  align-items: center;
+  border: 0;
+  background-color: #b5e7ee;
+  box-shadow: rgba(6, 9, 210, 0.991) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(188, 98%, 46%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+button:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(69, 95%, 50%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
 footer {
   color: white;
   text-align: center;
