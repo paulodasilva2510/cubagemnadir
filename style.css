@@ -13,18 +13,18 @@ header {
 }
 
 section {
-  background: white;
+  background: rgb(154, 200, 243);
   border-radius: 10px;
   margin: 20px auto;
   padding: 100px;
-  width: 50%;
-  max-width: 60%;
+  width: 55%;
+  max-width: 65%;
   margin: auto;
   line-height: 2;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
 }
 button {
-  padding: 17px 40px;
+  padding: 10px 15px;
   border-radius: 50px;
   text-align: center;
   cursor: pointer;
@@ -53,7 +53,9 @@ button:active {
   transform: translateY(10px);
   transition: 100ms;
 }
-
+#resultado {
+  text-align: center;
+}
 footer {
   color: white;
   text-align: center;
