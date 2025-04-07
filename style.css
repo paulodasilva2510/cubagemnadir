@@ -16,8 +16,8 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100px;
-  max-width: 50%;
+  width: 120px;
+  max-width: 100%;
   height: auto;
 }
 section {
