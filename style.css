@@ -2,7 +2,7 @@
 
 /* Estilos básicos para o formulário e seus elementos */
 body {
-  background: rgb(54, 7, 148);
+  background: rgb(40, 63, 143);
   font: normal 15pt Arial;
   font-size: 1rem;
 }
@@ -10,8 +10,16 @@ body {
 header {
   color: white;
   text-align: center;
+  height: auto;
 }
-
+.log {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+}
 section {
   background: rgb(154, 200, 243);
   border-radius: 10px;
