@@ -13,10 +13,10 @@ header {
   height: auto;
 }
 .log {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 50px;
+  width: 100px;
   max-width: 50%;
   height: auto;
 }
